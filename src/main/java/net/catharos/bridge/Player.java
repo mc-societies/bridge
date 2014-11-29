@@ -5,6 +5,8 @@ package net.catharos.bridge;
  */
 public interface Player {
 
+    boolean isAvailable();
+
     double getHealth();
 
     int getFoodLevel();
