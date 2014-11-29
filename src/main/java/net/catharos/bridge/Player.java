@@ -1,5 +1,7 @@
 package net.catharos.bridge;
 
+import java.util.Locale;
+
 /**
  * Represents a Player
  */
@@ -20,4 +22,6 @@ public interface Player {
     void sendBlockChange(Location location, Material material, byte b);
 
     Inventory getInventory();
+
+    Locale getLocale();
 }
