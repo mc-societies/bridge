@@ -1,4 +1,4 @@
-package net.catharos.bridge;
+package org.societies.bridge;
 
 import gnu.trove.map.hash.THashMap;
 

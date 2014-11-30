@@ -1,4 +1,4 @@
-package net.catharos.bridge;
+package org.societies.bridge;
 
 import com.googlecode.cqengine.attribute.Attribute;
 import com.googlecode.cqengine.attribute.SimpleAttribute;

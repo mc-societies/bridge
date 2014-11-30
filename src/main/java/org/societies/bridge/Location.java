@@ -1,4 +1,4 @@
-package net.catharos.bridge;
+package org.societies.bridge;
 
 import net.catharos.lib.core.math.Vector3d;
 

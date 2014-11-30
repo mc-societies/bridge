@@ -1,4 +1,4 @@
-package net.catharos.bridge;
+package org.societies.bridge;
 
 import com.google.inject.Inject;
 import com.googlecode.cqengine.CQEngine;
