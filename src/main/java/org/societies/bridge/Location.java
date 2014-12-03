@@ -37,4 +37,12 @@ public class Location extends Vector3d {
     public World getWorld() {
         return world;
     }
+
+
+    public static class InvalidLocation extends Location {
+
+        public InvalidLocation() {
+            super(null, 0, 0, 0);
+        }
+    }
 }
