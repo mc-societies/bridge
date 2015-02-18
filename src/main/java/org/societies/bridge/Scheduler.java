@@ -5,5 +5,5 @@ package org.societies.bridge;
  */
 public interface Scheduler {
 
-    void scheduleSyncRepeatingTask(Runnable task, long delay, long period);
+    void scheduleSyncRepeatingTask(Runnable task, long period);
 }
