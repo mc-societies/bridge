@@ -38,6 +38,10 @@ public class Location extends Vector3d {
         return world;
     }
 
+    @Override
+    public Location floor() {
+        return new Location(getWorld(), getRoundedX(), getRoundedY(), getRoundedZ());
+    }
 
     public static class InvalidLocation extends Location {
 
