@@ -1,5 +1,6 @@
 package org.societies.bridge;
 
+import com.google.common.collect.Iterables;
 import com.google.inject.Inject;
 import com.googlecode.cqengine.CQEngine;
 import com.googlecode.cqengine.IndexedCollection;
@@ -60,6 +61,6 @@ public class Materials {
 
     public Material getMaterial(String name) {
         Query<Material> query = contains(Material.LOWER_MATERIAL_NAME, name.toLowerCase());
-        return materials.retrieve(query).uniqueResult();
+        return Iterables.getFirst(materials.retrieve(query), null);
     }
 }

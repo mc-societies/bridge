@@ -10,6 +10,10 @@ public class Location extends Vector3d {
     private final World world;
     private final float pitch, yaw, roll;
 
+    public Location(World world, Vector3d vector) {
+        this(world, vector.getX(), vector.getY(), vector.getZ(), 0, 0, 0);
+    }
+
     public Location(World world, double x, double y, double z) {
         this(world, x, y, z, 0, 0, 0);
     }
@@ -36,6 +40,11 @@ public class Location extends Vector3d {
 
     public World getWorld() {
         return world;
+    }
+
+    @Override
+    public Location add(double x, double y, double z) {
+        return new Location(getWorld(), super.add(x, y, z));
     }
 
     @Override
