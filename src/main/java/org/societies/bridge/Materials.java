@@ -13,7 +13,9 @@ import java.util.Collection;
 import static com.googlecode.cqengine.query.QueryFactory.contains;
 import static com.googlecode.cqengine.query.QueryFactory.equal;
 
-/** Represents a Material */
+/**
+ * Represents a Material
+ */
 public class Materials {
 
     public static final int WOOD_SWORD = 268;

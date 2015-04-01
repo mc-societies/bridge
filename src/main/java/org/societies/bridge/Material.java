@@ -30,12 +30,16 @@ public interface Material {
 
     public static final Attribute<Material, Integer> MATERIAL_ID = new SimpleAttribute<Material, Integer>("material_id") {
         @Override
-        public Integer getValue(Material material) { return material.getID(); }
+        public Integer getValue(Material material) {
+            return material.getID();
+        }
     };
 
     public static final Attribute<Material, String> LOWER_MATERIAL_NAME = new SimpleAttribute<Material, String>("material_name") {
         @Override
-        public String getValue(Material material) { return material.getName().toLowerCase(); }
+        public String getValue(Material material) {
+            return material.getName().toLowerCase();
+        }
     };
 
 }
