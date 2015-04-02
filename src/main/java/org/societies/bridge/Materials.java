@@ -1,13 +1,13 @@
 package org.societies.bridge;
 
 import com.google.common.collect.Iterables;
-import com.google.inject.Inject;
 import com.googlecode.cqengine.CQEngine;
 import com.googlecode.cqengine.IndexedCollection;
 import com.googlecode.cqengine.index.hash.HashIndex;
 import com.googlecode.cqengine.index.suffix.SuffixTreeIndex;
 import com.googlecode.cqengine.query.Query;
 
+import javax.inject.Inject;
 import java.util.Collection;
 
 import static com.googlecode.cqengine.query.QueryFactory.contains;

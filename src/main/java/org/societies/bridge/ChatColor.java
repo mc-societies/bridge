@@ -1,7 +1,6 @@
 package org.societies.bridge;
 
-import gnu.trove.map.hash.THashMap;
-
+import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Pattern;
 
@@ -41,7 +40,7 @@ public enum ChatColor {
     private final boolean format;
     private final String string;
 
-    private final static Map<Character, ChatColor> BY_CHAR = new THashMap<Character, ChatColor>();
+    private final static Map<Character, ChatColor> BY_CHAR = new HashMap<Character, ChatColor>();
 
     static {
         for (ChatColor color : values()) {
@@ -53,11 +52,11 @@ public enum ChatColor {
         return compile("(?i)" + String.valueOf(c) + "[0-9A-FK-OR]");
     }
 
-    private ChatColor(char code) {
+    ChatColor(char code) {
         this(code, false);
     }
 
-    private ChatColor(char code, boolean format) {
+    ChatColor(char code, boolean format) {
         this.code = code;
         this.format = format;
         this.string = new String(new char[]{COLOR_CHAR, code});
